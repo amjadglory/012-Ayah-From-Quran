@@ -1,0 +1,19 @@
+@media screen and (max-width: 760px) {
+  #content,
+  .heading p,
+  .custom-btn {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .heading {
+    padding-top: 50px;
+  }
+  #content {
+    padding-top: 25px;
+  }
+  .custom-btn{
+    width: 50%;
+  }
+}
