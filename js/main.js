@@ -57,12 +57,18 @@ var ayat = [
 var randomchecker;
 
 ayahBtn.addEventListener("click", function () {
-  for (var i = 0; i < 100; i++) {
+  /* old logic */
+  // for (var i = 0; i < 100; i++) {
+  //   var randomIndex = Math.floor(Math.random() * ayat.length);
+  //   if (randomIndex !== randomchecker) {
+  //     break;
+  //   }
+  // }
+
+  /* logic after fix */
+  do {
     var randomIndex = Math.floor(Math.random() * ayat.length);
-    if (randomIndex !== randomchecker) {
-      break;
-    }
-  }
+  } while (randomIndex === randomchecker);
 
   randomchecker = randomIndex;
 
